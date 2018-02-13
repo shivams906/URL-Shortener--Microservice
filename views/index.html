@@ -1,0 +1,62 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URL Shortener Microservice</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <h2>
+      Enter an address like this to get a shortened URL
+    </h2>
+    <p class="code">
+      https://abounding-attempt.glitch.me/new/https://www.google.com
+    </p>
+    <p class="code">
+      https://abounding-attempt.glitch.me/new/http://foo.com:80
+    </p>
+    <br><br>
+    <h3>
+      Example Usage :
+    </h3>
+    <h3>
+      Valid URL :
+    </h3>
+    <a href="https://abounding-attempt.glitch.me/new/https://www.google.com">
+      https://abounding-attempt.glitch.me/new/https://www.google.com
+    </a>
+    <h3>
+      Shortened URL :
+    </h3>
+    <a href="https://abounding-attempt.glitch.me/1">
+      https://abounding-attempt.glitch.me/1
+    </a>
+    <h3>
+      Invalid URL : 
+    </h3>
+    <a href="https://abounding-attempt.glitch.me/new/fcfcfc">
+      https://abounding-attempt.glitch.me/new/fcfcfc
+    </a>
+    
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>
